@@ -2,14 +2,14 @@
 ## functions do
 
 ## Write a short comment describing this function
-# The makeCacheMatrix function:
-# 1) takes an R object, of type matrix, as the input parameter attribute
-# 2) declares an attribute, called inv, to keep the inverse of the input matrix parametr 
-# 3) has two setter and getter functions to manipulate and access its attributes
-# 4) creates a list of all the setters and getters so they can be used by cacheSolve function
-# Usage: one needs to declare an instance of this function or class and pass it as an
-# argument to the cacheSolve function below. The function assumes no change in the matrix 
-# and feeds the previous value unless the whole function or its set function is not invoked again. 
+## The makeCacheMatrix function:
+## 1) takes an R object, of type matrix, as the input parameter attribute
+## 2) declares an attribute, called inv, to keep the inverse of the input matrix parametr 
+## 3) has two setter and getter functions to manipulate and access its attributes
+## 4) creates a list of all the setters and getters so they can be used by cacheSolve function
+## Usage: one needs to declare an instance of this function or class and pass it as an
+## argument to the cacheSolve function below. The function assumes no change in the matrix 
+## and feeds the previous value unless the whole function or its set function is not invoked again. 
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -37,10 +37,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-# The cacheSolve function:
-# 1) first checks if the inv attribute of the makeCacheMatrix is NULL; if so,
-# 2) accesses the input matrix, takes inverse of it and saves the result in inv attribute
-# 3) otherwise, takes the cached value and returns it
+## The cacheSolve function:
+## 1) first checks if the inv attribute of the makeCacheMatrix is NULL; if so,
+## 2) accesses the input matrix, takes inverse of it and saves the result in inv attribute
+## 3) otherwise, takes the cached value and returns it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
