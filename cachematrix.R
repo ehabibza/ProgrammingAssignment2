@@ -3,13 +3,13 @@
 
 ## Write a short comment describing this function
 ## The makeCacheMatrix function:
-## 1) takes an R object, of type matrix, as the input parameter attribute
-## 2) declares an attribute, called inv, to keep the inverse of the input matrix parametr 
+## 1) takes an R object of type matrix as an input parameter
+## 2) declares an attribute, called inv, to store the inverse of the input (matrix) parametr 
 ## 3) has two setter and getter functions to manipulate and access its attributes
-## 4) creates a list of all the setters and getters so they can be used by cacheSolve function
+## 4) creates a list consisting of all the setters and getters to be used by the cacheSolve function
 ## Usage: one needs to declare an instance of this function or class and pass it as an
 ## argument to the cacheSolve function below. The function assumes no change in the matrix 
-## and feeds the previous value unless the whole function or its set function is not invoked again. 
+## and feeds the previous value unless its set function is invoked. 
 
 makeCacheMatrix <- function(x = matrix()) {
 
