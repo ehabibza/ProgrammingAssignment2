@@ -39,8 +39,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 ## The cacheSolve function:
 ## 1) first checks if the inv attribute of the makeCacheMatrix is NULL; if so,
-## 2) accesses the input matrix, takes inverse of it and saves the result in inv attribute
-## 3) otherwise, takes the cached value and returns it
+## 2) accesses the input matrix, takes inverse of it and saves the result in the inv attribute
+## 3) otherwise, returns the previous inverse value (cached)
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
